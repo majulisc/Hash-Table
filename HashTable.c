@@ -48,7 +48,7 @@ void imprimir (tabelaHash[]){
     }
 
 int main (){
-    int tabela [TAM], opcao; //o vetor de armazenamento é a nossa tabela hash e ela inicializa VAZIA 
+    int tabela [TAM], opcao, retornoDaFuncaoBusca; //o vetor de armazenamento é a nossa tabela hash e ela inicializa VAZIA 
     do{
             printf("\n\t0 - Sair\n\t1 - Inserir\n\t2 - Buscar\n\t3 -Imprimir\n");
             scanf(%d, & opcao);
@@ -59,6 +59,13 @@ int main (){
     case 2:
         printf("Qual valor deseja buscar");
         scanf("%d", & valor);
+        retornoDaFuncaoBusca = busca(tabelaHash, valor);
+        if(retorno !=0){
+            printf("Valor encontrado %d!\n",retonoDaFuncaoBusca)
+        }
+        else{
+            printf(" valor nao encontrado");
+        }
         break;
     case 3:
         imprimir(tabelaHash);
