@@ -12,7 +12,7 @@ void inicializarTabela (int tabelaHash[]){
     }
 }
 
-int funcaoHash(int chave){ // a funcao hash vai calcular o indice com base no valor da chave
+    int funcaoHash(int chave){ // a funcao hash vai calcular o indice com base no valor da chave
     return chave % TAM; // retorno do resto
 } // a funcaoHash é a funcao de espalhamento
 
@@ -35,16 +35,39 @@ int busca (int tabelaHash[], int chave){
         else {
             indice = funcaoHash (indice + 1);
         }
+        return 0;
     }
 }
+
 
 void imprimir (tabelaHash[]){
     int i;
     for (i = 0; i < TAM; i++){
-        
+        printf ("%d = %d\n", i, tabelaHash[i]);
+
     }
-}
 
 int main (){
-    int tabela [TAM]; //o vetor de armazenamento é a nossa tabela hash e ela inicializa VAZIA 
+    int tabela [TAM], opcao; //o vetor de armazenamento é a nossa tabela hash e ela inicializa VAZIA 
+    do{
+            printf("\n\t0 - Sair\n\t1 - Inserir\n\t2 - Buscar\n\t3 -Imprimir\n");
+            scanf(%d, & opcao);
+    switch(opcao){
+    
+    case 1:
+        break;
+    case 2:
+        printf("Qual valor deseja buscar");
+        scanf("%d", & valor);
+        break;
+    case 3:
+        imprimir(tabelaHash);
+        break;
+    default:
+        printf("OPÇAO INVALIDA!")     
+    }
+    }  while (opcao != 0);
+
+
+
 }
