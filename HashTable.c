@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 // 2 * 15 (quantidade de elementos)== 30 -> 29 (primo mais proximo)
-// meu conjunto de dados apresenta apenas numeros inteiros positivos e nnega o 0
+// meu conjunto de dados apresenta apenas numeros inteiros positivos e nega o 0
 #define TAM  29 
 
 void inicializarTabela (int tabelaHash[]){
@@ -51,7 +51,7 @@ void imprimir (int tabelaHash[]){
 }
 
 int main (){
-    int tabela [TAM], opcao, retornoDaFuncaoBusca; //o vetor de armazenamento é a nossa tabela hash e ela inicializa VAZIA 
+    int tabelaHash [TAM], opcao, retornoDaFuncaoBusca; //o vetor de armazenamento é a nossa tabela hash e ela inicializa VAZIA 
     do{
             printf("\n\t0 - Sair\n\t1 - Inserir\n\t2 - Buscar\n\t3 -Imprimir\n");
             scanf("%d", & opcao);
@@ -60,12 +60,12 @@ int main (){
     case 1:
         printf("Qual valor deseja inserir");
         scanf("%d", &valor);
-        inserir(valor, tabela);
+        inserir(valor, tabelaHash);
         break;
     case 2:
         printf("Qual valor deseja buscar");
         scanf("%d", & valor);
-        retornoDaFuncaoBusca = busca(tabela, valor);
+        retornoDaFuncaoBusca = busca(tabelaHash, valor);
         if(retornoDaFuncaoBusca !=0){
             printf("Valor encontrado %d!\n", retornoDaFuncaoBusca)
         }
@@ -74,7 +74,7 @@ int main (){
         }
         break;
     case 3:
-        imprimir(tabela);
+        imprimir(tabelaHash);
         break;
     default:
         printf("OPÇAO INVALIDA!");     
