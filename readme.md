@@ -1,17 +1,17 @@
-#  Hash Table em C
+# Hash Table em C
 
 Nesse rep foi desenvolvida uma Tabela Hash em um vetor de armazenamento de dados.
 
 ---
 
-##  O que é uma Tabela Hash?
+## O que é uma Tabela Hash?
 
 A tabela Hash é uma estrutura de dados que proporciona buscas direcionadas em uma tabela (vetores, listas etc).
 A tabela Hash escolhida irá armazenar números inteiros diferentes de 0.
 
 ---
 
-##  Fórmulas Matemáticas
+## 📐 Fórmulas Matemáticas
 
 ### Tamanho do vetor de armazenamento
 
