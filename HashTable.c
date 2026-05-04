@@ -13,7 +13,8 @@ void inicializarTabela (int tabelaHash[]){
 }
 
 int funcaoHash(int chave){ // a funcao hash vai calcular o indice com base no valor da chave
-    return chave % TAM; // retorno do resto
+    int indice = chave % TAM;
+    return indice; // retorno do resto
 } // a funcaoHash é a funcao de espalhamento
 
 void inserir(int chave, int tabelaHash[]){ //funcao que descobre o indice e armazena a chave na tabela Hash
