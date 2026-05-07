@@ -52,15 +52,16 @@ void imprimir (int tabelaHash[]){
 }
 
 int main (){
-    int tabelaHash [TAM], opcao, retornoDaFuncaoBusca; //o vetor de armazenamento é a nossa tabela hash e ela inicializa VAZIA 
+    int tabelaHash [TAM], opcao, retornoDaFuncaoBusca, valor; //o vetor de armazenamento é a nossa tabela hash e ela inicializa VAZIA 
     do{
             printf("\n\t0 - Sair\n\t1 - Inserir\n\t2 - Buscar\n\t3 -Imprimir\n");
             scanf("%d", & opcao);
     switch(opcao){
+        
     
     case 1:
         printf("Qual valor deseja inserir");
-        scanf("%d", &valor);
+        scanf("%d", & valor);
         inserir(valor, tabelaHash);
         break;
     case 2:
