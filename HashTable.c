@@ -53,6 +53,7 @@ void imprimir (int tabelaHash[]){
 
 int main (){
     int tabelaHash [TAM], opcao, retornoDaFuncaoBusca, valor; //o vetor de armazenamento é a nossa tabela hash e ela inicializa VAZIA 
+    inicializarTabela(tabelaHash);
     do{
             printf("\n\t0 - Sair\n\t1 - Inserir\n\t2 - Buscar\n\t3 -Imprimir\n");
             scanf("%d", & opcao);
@@ -81,9 +82,9 @@ int main (){
     default:
         printf("OPÇAO INVALIDA!");     
     }
-}
+    }
 while (opcao != 0);
 return 0;
      
-
+    
 }
