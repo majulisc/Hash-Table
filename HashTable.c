@@ -60,13 +60,13 @@ int main (){
     
     case 1:
         printf("Qual valor deseja inserir");
-        scanf("%d", &chave);
-        inserir(chave, tabelaHash);
+        scanf("%d", &valor);
+        inserir(valor, tabelaHash);
         break;
     case 2:
         printf("Qual valor deseja buscar");
-        scanf("%d", & chave);
-        retornoDaFuncaoBusca = busca(tabelaHash, chave);
+        scanf("%d", & valor);
+        retornoDaFuncaoBusca = busca(tabelaHash, valor);
         if(retornoDaFuncaoBusca !=0){
             printf("Valor encontrado %d!\n", retornoDaFuncaoBusca)
         }
