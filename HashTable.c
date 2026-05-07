@@ -68,7 +68,7 @@ int main (){
         scanf("%d", & valor);
         retornoDaFuncaoBusca = busca(tabelaHash, valor);
         if(retornoDaFuncaoBusca !=0){
-            printf("Valor encontrado %d!\n", retornoDaFuncaoBusca)
+            printf("Valor encontrado %d!\n", retornoDaFuncaoBusca);
         }
         else{
             printf(" valor nao encontrado");
